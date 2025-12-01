@@ -1,0 +1,23 @@
+GIT COMMANDS
+
+I. First step
+
+1) git init  (for initialization of the repository)
+2) git add .   (. means any file extension)
+	git add *.java (all files only with java extensions)
+3) git commit
+	git commit -m "pass some message"
+4) git remote add origin <remote url>
+Eg: git remote add origin https://github.com/SharanyaKishtapuram-star/VISEM_JFS.git
+5) git push origin master(old version)
+	git push origin main(new version)
+6) you can heck it in remote repository
+
+---------------------------------------------------------
+if you can add any files in local repository or 
+you can change the existing files in local repository
+
+1) git status  
+2) git add . 
+3) git commit -m "message"
+4) git push origin master
