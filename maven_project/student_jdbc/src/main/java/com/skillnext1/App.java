@@ -1,14 +1,19 @@
 package com.skillnext1;
 
 public class App {
+
     public static void main(String[] args) {
 
         StudentDAO dao = new StudentDAO();
 
         try {
             // INSERT
-            Student s1 = new Student("Meghana", "meghana@gmail.com", "Computer Science");
-            dao.addStudent(s1);
+            Student s1 = new Student(
+                    "Meghana",
+                    "meghana@gmail.com",
+                    "Core Java"
+            );
+            dao.insert(s1);   // ✅ INSERT CALL ADDED
             System.out.println("Student added!");
 
             // GET ALL
@@ -18,7 +23,12 @@ public class App {
             }
 
             // UPDATE
-            Student s2 = new Student(1, "Meghana P", "meghana123@gmail.com", "AI & ML");
+            Student s2 = new Student(
+                    1,
+                    "Meghana P",
+                    "meghana123@gmail.com",
+                    "AI & ML"
+            );
             dao.updateStudent(s2);
             System.out.println("\nStudent updated!");
 
